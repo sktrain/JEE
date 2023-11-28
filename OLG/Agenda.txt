@@ -1,0 +1,21 @@
+1.Tag: 
+
+    	Java Einführung
+
+    	JEE Einführung
+
+    	Wildfly: Stand der Dinge (Release Notes)
+
+	Start-Parameter	
+
+	Speicherverwaltung
+
+
+2.Tag: 
+	Exceptions
+    	
+	Log-Files
+
+	...
+
+Zu den einzelnen Punkten können teilweise Bsp-Programme betrachtet werden.
