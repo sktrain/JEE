@@ -5,6 +5,7 @@ Folien und Infos:
     java_DependencyInjection.pdf ---- Folien Dependency Injection
     java_jee_einführung.pdf ---- Folien JEE-Überblick
     Überblick WebServices.pdf ---- Folien Überblick zu SOAP-basierten WebServices
+    java_einführung_neu.pdf ---- Folien Java-Überblick
     
 
 Helferlein:
