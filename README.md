@@ -6,6 +6,7 @@ Folien und Infos:
     java_jee_einführung.pdf ---- Folien JEE-Überblick
     Überblick WebServices.pdf ---- Folien Überblick zu SOAP-basierten WebServices
     java_einführung_neu.pdf ---- Folien Java-Überblick
+    java_Servlets.pdf ---- Folien Servlets
     
 
 Helferlein:
