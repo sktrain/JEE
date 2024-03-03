@@ -15,7 +15,10 @@ Helferlein:
     h2_skripte.zip ---- Skripte für Bsp-Datenbanktabellen (H2-Version)
     h2-1.4.199.jar ---- älterer Treiber für H2 Database
     hibernate_lib.zip ---- Hibernate Version 5.4 (setzt JPA 2.2 um)
-    jboss-ejb-client.properties ---- Properties für remote EJB-Zugriff bei Wildfly    
+    jboss-ejb-client.properties ---- Properties für remote EJB-Zugriff bei Wildfly
+    maven_wildfly_ee8_basis.zip ---- Maven-Bsp-Projekt zu Jakarta EE8 und Wildfly
+    maven_wildfly_ee8_client_jaxws.zip ---- Maven-Bsp-Projekt für den Remote-Client zu Jakarta EE8 und Wildfly
+    test.mv.db ---- H2-Database-File inklusive Tabellen (HR-Schema)
     weld.zip ---- Weld (CDI-Referenz-Implementierung)
  
     
