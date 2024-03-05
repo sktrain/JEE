@@ -1,0 +1,13 @@
+Auf der Server-Seite:
+
+- POM umstellen
+- persistence.xml anpassen
+- EntityManager spritzen lassen
+- Serializable beimm Datenaustausch berücksichtigen!  (Optional ist leider nicht Serializable)
+
+
+Auf der  Client-Seite:
+- Auszutauschende Objekte/Klassen müssen auch auf der Client-Seite bekannt sein.
+- Was ist mit Lazy-Beziehungen?
+- Muss Hibernate auf der Client-Seite vorhanden sein?
+- Es reicht erstmal nur zu Lesen (Test ob es grundsätzlich funktioniert)
