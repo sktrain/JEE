@@ -3,7 +3,8 @@ Auf der Server-Seite:
 - POM umstellen
 - persistence.xml anpassen
 - EntityManager spritzen lassen
-- Serializable beimm Datenaustausch berücksichtigen!  (Optional ist leider nicht Serializable)
+- Serializable beim Datenaustausch berücksichtigen!  
+  (Optional ist leider nicht Serializable)
 
 
 Auf der  Client-Seite:

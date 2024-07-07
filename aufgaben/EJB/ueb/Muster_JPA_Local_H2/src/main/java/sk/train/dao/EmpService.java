@@ -1,13 +1,9 @@
 package sk.train.dao;
 
-import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
 
-import javax.persistence.EntityManager;
-import javax.persistence.Query;
-import javax.persistence.TypedQuery;
-
+import jakarta.persistence.EntityManager;
 import sk.train.model.Department;
 import sk.train.model.Employee;
 

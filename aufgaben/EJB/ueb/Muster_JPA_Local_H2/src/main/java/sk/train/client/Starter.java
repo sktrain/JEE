@@ -6,12 +6,7 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
-import javax.persistence.*;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Root;
-import javax.persistence.criteria.Subquery;
-
+import jakarta.persistence.*;
 import sk.train.dao.EmpService;
 import sk.train.model.Department;
 import sk.train.model.Employee;
