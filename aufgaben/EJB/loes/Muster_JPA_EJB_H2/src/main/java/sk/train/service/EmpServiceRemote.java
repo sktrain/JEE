@@ -1,9 +1,9 @@
 package sk.train.service;
 
 import java.util.List;
-import java.util.Optional;
 
-import javax.ejb.Remote;
+
+import jakarta.ejb.Remote;
 
 import sk.train.model.Department;
 import sk.train.model.Employee;

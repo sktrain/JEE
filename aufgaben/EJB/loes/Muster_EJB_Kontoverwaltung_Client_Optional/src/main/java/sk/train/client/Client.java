@@ -26,7 +26,7 @@ public class Client {
 
 		// Client-seitigen Proxy beschaffen		
 		KontoVerwaltungRemote stub = (KontoVerwaltungRemote) 
-				context.lookup("ejb:/Muster_EJB_Kontoverwaltung/KontoVerwaltung!sk.train.KontoVerwaltungRemote");
+				context.lookup("ejb:/Muster_EJB_Kontoverwaltung_Optional/KontoVerwaltung!sk.train.KontoVerwaltungRemote");
 		
 		Runnable task = () -> {for (int i=0; i<100; ++i) {
 			stub.transferMoney(new Random().nextInt(100), 1000);

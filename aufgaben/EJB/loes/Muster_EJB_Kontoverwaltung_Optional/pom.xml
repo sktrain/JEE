@@ -5,19 +5,19 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>sk.train</groupId>
-	<artifactId>Muster_EJB_Kontoverwaltung</artifactId>
+	<artifactId>Muster_EJB_Kontoverwaltung_Optional</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
 
-	<name>Muster_EJB_Kontoverwaltung</name>
-	<description>Kontoverwaltung als EJB mit entsprechender Thread-Synchronisation</description>
+	<name>Muster_EJB_Kontoverwaltung_Optional</name>
+	<description>Kontoverwaltung als EJB mit entsprechender Thread-Synchronisation + Interceptor</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.report.sourceEncoding>UTF-8</project.report.sourceEncoding>
 		<maven.compiler.release>17</maven.compiler.release>
-		<jakartaee-api.version>8.0.0</jakartaee-api.version>
+		<jakartaee-api.version>10.0.0</jakartaee-api.version>
 		<compiler-plugin.version>3.11.0</compiler-plugin.version>
 		<war-plugin.version>3.4.0</war-plugin.version>
 		<version.wildfly.maven.plugin>4.0.0.Final</version.wildfly.maven.plugin>
@@ -30,12 +30,7 @@
 			<version>${jakartaee-api.version}</version>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-			<groupId>javax.annotation</groupId>
-			<artifactId>javax.annotation-api</artifactId>
-			<version>1.3.2</version>
-			<scope>provided</scope>
-		</dependency>
+		
 	</dependencies>
 
 	<build>

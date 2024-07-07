@@ -1,7 +1,7 @@
 package beans;
 
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import annos.GitarreType;
 import ifaces.Instrument;

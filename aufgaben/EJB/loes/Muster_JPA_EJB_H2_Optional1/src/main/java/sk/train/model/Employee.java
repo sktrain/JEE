@@ -1,6 +1,6 @@
 package sk.train.model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 import sk.train.jpalistener.SimpleListener;
 

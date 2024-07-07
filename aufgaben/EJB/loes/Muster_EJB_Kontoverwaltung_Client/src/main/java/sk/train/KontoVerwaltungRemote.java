@@ -1,6 +1,6 @@
 package sk.train;
 
-import javax.ejb.Remote;
+import jakarta.ejb.Remote;
 
 @Remote
 public interface KontoVerwaltungRemote {
