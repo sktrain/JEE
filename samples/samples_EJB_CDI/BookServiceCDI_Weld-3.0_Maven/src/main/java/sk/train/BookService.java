@@ -2,6 +2,8 @@ package sk.train;
 
 import javax.inject.Inject;
 
+//import sk.train.sample.EmptyIf;
+
 public class BookService {
 	
 	@Inject
@@ -9,7 +11,7 @@ public class BookService {
 	private NumberGenerator numberGenerator;
 	
 //	@Inject
-//	private Murks m;
+//	private EmptyIf m;
 
 	public Book createBook(String title, Float price, String description) {
 		Book book = new Book(title, price, description);
