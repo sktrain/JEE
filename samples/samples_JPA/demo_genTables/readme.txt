@@ -1,0 +1,1 @@
+Simple Demo zur Generierung des DB-Schemas zur Laufzeit anhand der Entities.
