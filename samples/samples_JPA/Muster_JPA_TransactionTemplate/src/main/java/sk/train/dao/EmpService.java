@@ -3,7 +3,7 @@ package sk.train.dao;
 import java.util.List;
 import java.util.Optional;
 
-import javax.persistence.EntityManager;
+import jakarta.persistence.EntityManager;
 import sk.train.model.Department;
 import sk.train.model.Employee;
 

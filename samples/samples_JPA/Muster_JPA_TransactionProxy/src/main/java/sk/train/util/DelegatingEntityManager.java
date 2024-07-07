@@ -3,20 +3,13 @@ package sk.train.util;
 import java.util.List;
 import java.util.Map;
 
-import javax.persistence.EntityGraph;
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.FlushModeType;
-import javax.persistence.LockModeType;
-import javax.persistence.Query;
-import javax.persistence.StoredProcedureQuery;
-import javax.persistence.TypedQuery;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaDelete;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.CriteriaUpdate;
-import javax.persistence.metamodel.Metamodel;
+import jakarta.persistence.*;
+import jakarta.persistence.criteria.CriteriaBuilder;
+import jakarta.persistence.criteria.CriteriaDelete;
+import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.CriteriaUpdate;
+import jakarta.persistence.metamodel.Metamodel;
+
 
 @SuppressWarnings("rawtypes")
 public class DelegatingEntityManager implements EntityManager {
@@ -74,11 +67,6 @@ public class DelegatingEntityManager implements EntityManager {
 	@Override
 	public Query createQuery(String jpql) {
 		return EntityManagerThreadLocal.getCurrentEntityManager().createQuery(jpql);
-	}
-
-	@Override
-	public <T> TypedQuery<T> createQuery(CriteriaQuery<T> cq) {
-		return EntityManagerThreadLocal.getCurrentEntityManager().createQuery(cq);
 	}
 
 	@Override
@@ -247,16 +235,6 @@ public class DelegatingEntityManager implements EntityManager {
 	}
 
 	@Override
-	public Query createQuery(CriteriaUpdate arg0) {
-		return EntityManagerThreadLocal.getCurrentEntityManager().createQuery(arg0);
-	}
-
-	@Override
-	public Query createQuery(CriteriaDelete arg0) {
-		return EntityManagerThreadLocal.getCurrentEntityManager().createQuery(arg0);
-	}
-
-	@Override
 	public StoredProcedureQuery createStoredProcedureQuery(String arg0) {
 		return EntityManagerThreadLocal.getCurrentEntityManager().createStoredProcedureQuery(arg0);
 	}
@@ -284,6 +262,21 @@ public class DelegatingEntityManager implements EntityManager {
 	@Override
 	public boolean isJoinedToTransaction() {
 		return EntityManagerThreadLocal.getCurrentEntityManager().isJoinedToTransaction();
+	}
+
+	@Override
+	public <T> TypedQuery<T> createQuery(CriteriaQuery<T> criteriaQuery) {
+		return EntityManagerThreadLocal.getCurrentEntityManager().createQuery(criteriaQuery);
+	}
+
+	@Override
+	public Query createQuery(CriteriaUpdate updateQuery) {
+		return EntityManagerThreadLocal.getCurrentEntityManager().createQuery(updateQuery);
+	}
+
+	@Override
+	public Query createQuery(CriteriaDelete deleteQuery) {
+		return EntityManagerThreadLocal.getCurrentEntityManager().createQuery(deleteQuery);
 	}
 
 	

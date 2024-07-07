@@ -6,7 +6,7 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import sk.train.dao.EmpServiceImpl;
 import sk.train.dao.EmpService;
 import sk.train.model.Employee;

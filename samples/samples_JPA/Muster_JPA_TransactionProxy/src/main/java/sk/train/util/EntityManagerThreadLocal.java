@@ -1,6 +1,6 @@
 package sk.train.util;
 
-import javax.persistence.EntityManager;
+import jakarta.persistence.EntityManager;
 
 public class EntityManagerThreadLocal {
 

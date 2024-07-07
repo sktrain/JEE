@@ -1,6 +1,6 @@
 package sk.train.dao;
 
-import javax.persistence.EntityManager;
+import jakarta.persistence.EntityManager;
 
 public interface DaoIf {
 	
