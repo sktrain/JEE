@@ -17,7 +17,7 @@ Maven Goal "wildfly:undeploy"
 Aufgabe: Unsere JPA-EJB-Variante mit einem entsprechenden Rest-Frontend zu versehen.
 Minimal sollte das Rest-Frontent die CRUD-Operationen bzgl. einer der beiden Entitäten realisieren (z.Bsp. Department)
 
-Da auch JAX-RS-Implementierung wie RestEasy (Wildfly) Probleme  mit zyklischen Abhängigkeiten bei den
+Da auch JAX-RS-Implementierungen wie RestEasy (Wildfly) Probleme  mit zyklischen Abhängigkeiten bei den
 zu serialisierenden Klassen haben:
 Bereinigt um Abhängigkeiten in und zwischen den Tabellen, 
 d.h. Schlüssel-Fremdschlüssel-Beziehungen werden nicht mit JPA abgebildet.
