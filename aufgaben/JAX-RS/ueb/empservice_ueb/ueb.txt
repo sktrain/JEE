@@ -1,0 +1,4 @@
+Die vorhandene JPA-Implementierung soll mit einem Rest-Frontend versehen werden.
+Idealerweise sollten alle Methoden des EmpService-Repository abgebildet werden!
+
+Die Maven POM enthält bereits alle notwendigen Dependencies.
