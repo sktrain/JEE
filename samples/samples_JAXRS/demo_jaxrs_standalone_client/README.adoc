@@ -1,0 +1,12 @@
+= demo_jaxrs_standalone_client
+
+== What is it?
+
+Client for Rest-Service "demo_jaxrs_standalone" using JAX RS Client-API.
+
+
+== Important
+
+For Java 17 or higher is vm-Option required:
+
+--add-opens java.base/java.lang=ALL-UNNAMED
