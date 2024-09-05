@@ -1,0 +1,12 @@
+= demo_jaxrs_standalone_client
+
+== What is it?
+
+Asynchronous Client for Rest-Service "demo_jaxrs_standalone" using JAX RS Client-API.
+
+
+== Important
+
+With actual dependencies is no need for Java 17 or higher to handle with the modular SE
+
+( especially:  --add-opens java.base/java.lang=ALL-UNNAMED)

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>sk.train</groupId>
+	<artifactId>demo_jaxrs_standalone_client</artifactId>
+	<version>1.0-SNAPSHOT</version>
+
+
+	<properties>
+		<maven.compiler.release>17</maven.compiler.release>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+
+	<dependencies>
+		<!--		<dependency>-->
+		<!--			<groupId>org.jboss.spec.javax.ws.rs</groupId>-->
+		<!--			<artifactId>jboss-jaxrs-api_2.1_spec</artifactId>-->
+		<!--			<version>2.0.1.Final</version>-->
+		<!--		</dependency>-->
+
+		<!-- https://mvnrepository.com/artifact/jakarta.ws.rs/jakarta.ws.rs-api -->
+		<dependency>
+			<groupId>jakarta.ws.rs</groupId>
+			<artifactId>jakarta.ws.rs-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+
+		<!--		<dependency>-->
+		<!--			<groupId>org.jboss.spec.javax.xml.bind</groupId>-->
+		<!--			<artifactId>jboss-jaxb-api_2.3_spec</artifactId>-->
+		<!--			<version>2.0.1.Final</version>-->
+		<!--		</dependency>-->
+
+		<!--
+		https://mvnrepository.com/artifact/jakarta.xml.bind/jakarta.xml.bind-api -->
+		<dependency>
+			<groupId>jakarta.xml.bind</groupId>
+			<artifactId>jakarta.xml.bind-api</artifactId>
+			<version>4.0.2</version>
+		</dependency>
+
+		<!--    Benötigte Implementierung des JAX-RS Client-API (muss nicht
+		RestEasy sein)    -->
+		<!--
+		https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-client -->
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-client</artifactId>
+			<version>6.2.10.Final</version>
+		</dependency>
+
+		<!--
+		https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-jaxb-provider -->
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-jaxb-provider</artifactId>
+			<version>6.2.10.Final</version>
+		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-jettison-provider -->
+		<!--        <dependency>-->
+		<!--            <groupId>org.jboss.resteasy</groupId>-->
+		<!--            <artifactId>resteasy-jettison-provider</artifactId>-->
+		<!--            <version>3.0.11.Final</version>-->
+		<!--        </dependency>-->
+		<!--
+		https://mvnrepository.com/artifact/org.jboss.resteasy/resteasy-json-binding-provider -->
+		<!--        <dependency>-->
+		<!--            <groupId>org.jboss.resteasy</groupId>-->
+		<!--            <artifactId>resteasy-json-binding-provider</artifactId>-->
+		<!--            <version>3.5.1.Final</version>-->
+		<!--        </dependency>-->
+	</dependencies>
+
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<plugins>
+			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>3.2.0</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>4.0.0-M4</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.3.0</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.10.1</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M8</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>3.0.0-M8</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.3.0</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-install-plugin</artifactId>
+				<version>3.1.0</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>3.0.0</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-verifier-plugin</artifactId>
+				<version>1.1</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.3.2</version>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.wildfly.plugins</groupId>
+				<artifactId>wildfly-maven-plugin</artifactId>
+				<version>2.0.2.Final</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>9</source>
+					<target>9</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

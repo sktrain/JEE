@@ -1,0 +1,43 @@
+demo_jaxrs_standalone= demo_jaxrs_standalone
+
+Simple Rest Service using JAX-RS (Java API for RESTful Web Services)
+
+== What is it?
+
+The quickstart demonstrates the use of CDI and JAX-RS in WildFly Application Server Version 23.x
+similar to Wildfly Quickstarts.
+
+
+== Build and Deploy the Quickstart
+. Make sure your Wildfly Server is running.
+. Type the following Maven command to build the artifacts:
++
+[source,subs="attributes+",options="nowrap"]
+----
+mvn clean package wildfly:deploy
+----
+
+
+== Access the Application
+
+The application is deployed to http://localhost:8080/demo_jaxrs_standalone_delay/.
+
+* The _XML_ content can be viewed by accessing the following URL: http://localhost:8080/demo_jaxrs_standalone/rest/xml
+
+* The _JSON_ content can be viewed by accessing this URL: http://localhost:8080/demo_jaxrs_standalone/rest/json
+
+== Undeploy the Quickstart
+
+//*******************************************************************************
+// Include this template if your quickstart does a normal undeployment of an archive.
+//*******************************************************************************
+When you are finished testing the quickstart, follow these steps to undeploy the archive.
+
+. Make sure your Wildfly Server is running.
+. Type this command to undeploy the archive:
++
+[source,options="nowrap"]
+----
+$ mvn wildfly:undeploy
+----
+
