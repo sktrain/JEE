@@ -2,7 +2,10 @@
 
 == What is it?
 
-Asynchronous Client for Rest-Service "demo_jaxrs_standalone" using JAX RS Client-API.
+Asynchronous Client for Rest-Service "demo_jaxrs_standalone_delay" using JAX RS Client-API.
+
+Future-Object is already CompletableFuture 
+(https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/CompletableFuture.html)
 
 
 == Important

@@ -14,7 +14,7 @@ import java.util.concurrent.TimeoutException;
 
 public class ClientApp {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, InterruptedException, ExecutionException {
 
 		Client client = ClientBuilder.newClient(); // Client ist nicht per se AutoCloseable!
 
@@ -56,12 +56,17 @@ public class ClientApp {
 			target = client.target("http://localhost:8080/demo_jaxrs_standalone_delay/rest/json");
 			PersonCallback pc = new PersonCallback();
 			Future<Response> future3 = target.request().async().get(pc);
-			System.out.println(pc);
-			// Person p1 = target.request().get(Person.class);
-			// System.out.println(p1);
+			//Warten bis Ergebnis da ist, d.h. Callback aufgerufen wurde
+			Thread.sleep(20_000);
+
+			
 
 		} finally {
-			client.close();
+			try {
+				client.close();
+			} catch (Exception e) {
+				//Nothing to do			
+				}
 		}
 
 	}
