@@ -1,0 +1,49 @@
+Simple Rest Service using JAX-RS (Java API for RESTful Web Services)
+
+== What is it?
+
+The quickstart demonstrates the use of CDI and JAX-RS in WildFly Application Server Version 32.x
+and generates OpenAPI-Doc (Swagger) in JSON-Format.
+
+
+
+== Build and Deploy the Quickstart
+. Make sure your Wildfly Server is running in Microprofile:  $ ./standalone -c standalone-microprofile.xml
++
+[source,subs="attributes+",options="nowrap"]
+----
+$ ./standalone -c standalone-microprofile.xml
+----
+. Type the following Maven command to build the artifacts:
++
+[source,subs="attributes+",options="nowrap"]
+----
+mvn clean package wildfly:deploy
+----
+
+
+== Access the Application
+
+The application is deployed to (you see Swagger-UI) http://localhost:8080/demo_jaxrs_standalone_swagger
+
+* The _XML_ content can be viewed by accessing the following URL: http://localhost:8080/demo_jaxrs_standalone_swagger/rest/xml
+
+* The _JSON_ content can be viewed by accessing this URL: http://localhost:8080/demo_jaxrs_standalone_swagger/rest/json
+
+* The _OpenApi_ doc can be viewed by accessing this URL: http://localhost:8080/openapi?format=JSON
+
+== Undeploy the Quickstart
+
+//*******************************************************************************
+// Include this template if your quickstart does a normal undeployment of an archive.
+//*******************************************************************************
+When you are finished testing the quickstart, follow these steps to undeploy the archive.
+
+. Make sure your Wildfly Server is running.
+. Type this command to undeploy the archive:
++
+[source,options="nowrap"]
+----
+$ mvn wildfly:undeploy
+----
+
