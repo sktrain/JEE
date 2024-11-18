@@ -7,7 +7,7 @@ import sk.train.gen.HelloWorldService;
 
 public class Client {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) {
 
 		HelloWorldService service = new HelloWorldService();
 		
@@ -16,11 +16,10 @@ public class Client {
 		String answer = hw.sayHello("Otto");
 		System.out.println(answer);
 		
-		//funktioniert nicht, da nichts kommt LocalDate keinen entsprechenden Konstruktor ambietet:
-		//System.out.println(hw.sayDate());
+		//funktioniert nicht, da nichts kommt, weil LocalDate keinen entsprechenden Konstruktor anbietet:
+		System.out.println(hw.sayDate());
 		
 		System.out.println(hw.sayDateasString());
-		Thread.sleep(1000);
 		LocalDateTime ld = LocalDateTime.parse(hw.sayDateasString());
 		System.out.println(ld);
 		

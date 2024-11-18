@@ -2,8 +2,6 @@ package sk.train;
 
 import javax.xml.transform.Source;
 
-import org.w3c.dom.Document;
-
 import jakarta.xml.ws.Provider;
 import jakarta.xml.ws.WebServiceProvider;
 
