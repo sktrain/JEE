@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://org.javacream.ws/samples/order" xmlns:tns="http://org.javacream.ws/samples/order" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://javacream.org/order/">
+
+  <xs:import namespace="http://javacream.org/order/" schemaLocation="SimpleOrderWebService_schema2.xsd"/>
+
+  <xs:element name="createOrder" type="tns:createOrder"/>
+
+  <xs:element name="createOrderResponse" type="tns:createOrderResponse"/>
+
+  <xs:element name="findOrderById" type="tns:findOrderById"/>
+
+  <xs:element name="findOrderByIdResponse" type="tns:findOrderByIdResponse"/>
+
+  <xs:complexType name="findOrderById">
+    <xs:sequence>
+      <xs:element name="orderId" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="findOrderByIdResponse">
+    <xs:sequence>
+      <xs:element name="order" type="ns1:Order" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createOrder">
+    <xs:sequence>
+      <xs:element name="customerId" type="xs:string" form="qualified" minOccurs="0"/>
+      <xs:element name="category" type="xs:string" form="qualified" minOccurs="0"/>
+      <xs:element name="item" type="xs:string" form="qualified" minOccurs="0"/>
+      <xs:element name="amount" type="xs:int" form="qualified"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="createOrderResponse">
+    <xs:sequence>
+      <xs:element name="order" type="ns1:Order" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
