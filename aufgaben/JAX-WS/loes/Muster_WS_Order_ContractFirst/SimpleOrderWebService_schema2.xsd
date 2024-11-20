@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://javacream.org/order/" xmlns:tns="http://javacream.org/order/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Order" type="tns:Order"/>
+
+  <xs:complexType name="Order">
+    <xs:sequence>
+      <xs:element name="orderId" type="xs:string" form="qualified"/>
+      <xs:element name="customerId" type="xs:string" form="qualified"/>
+      <xs:element name="totalPrice" type="xs:double" form="qualified"/>
+      <xs:element name="accepted" type="xs:boolean" form="qualified"/>
+      <xs:element name="date" type="xs:dateTime" form="qualified"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
