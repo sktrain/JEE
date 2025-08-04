@@ -9,7 +9,6 @@ public class Person {
 	};
 	
 	private String name;
-	//@XmlJavaTypeAdapter(type = LocalDate.class,value=LocalDateAdapter.class)
 	//private LocalDate birthdate;
 	private Geschlecht g;
 	
@@ -50,3 +49,4 @@ public class Person {
 	
 	
 }
+
