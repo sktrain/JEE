@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions
+	xmlns:tns="http://www.example.org/HelloService/"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="HelloService"
+	targetNamespace="http://www.example.org/HelloService/"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+
+
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+			targetNamespace="http://www.example.org/HelloService/">
+			<xsd:element name="sayHello">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="in" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="sayHelloResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="sayDateAsString">
+				<xsd:complexType>
+					<xsd:sequence>
+
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="sayDateAsStringResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="out" type="xsd:string"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+
+
+
+			<xsd:element name="SayDate">
+				<xsd:complexType>
+					<xsd:sequence>
+
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="SayDateResponse">
+				<xsd:complexType>
+					<xsd:sequence>
+
+						<xsd:element name="out" type="xsd:date"></xsd:element>
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="sayHelloRequest">
+		<wsdl:part name="parameters" element="tns:sayHello"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="sayHelloResponse">
+		<wsdl:part name="parameters" element="tns:sayHelloResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="sayDateAsStringRequest">
+        <wsdl:part name="parameters" element="tns:sayDateAsString"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="sayDateAsStringResponse">
+		<wsdl:part name="parameters"
+			element="tns:sayDateAsStringResponse"></wsdl:part>
+	</wsdl:message>		<wsdl:message name="SayDateRequest">		<wsdl:part name="parameters" element="tns:SayDate"></wsdl:part>
+	</wsdl:message>	<wsdl:message name="SayDateResponse">		<wsdl:part name="parameters" element="tns:SayDateResponse"></wsdl:part>
+	</wsdl:message>	<wsdl:portType name="HelloIF">
+		<wsdl:operation name="sayHello">
+			<wsdl:input message="tns:sayHelloRequest"></wsdl:input>
+			<wsdl:output message="tns:sayHelloResponse"></wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="sayDateAsString">
+			<wsdl:input message="tns:sayDateAsStringRequest"></wsdl:input>
+			<wsdl:output message="tns:sayDateAsStringResponse"></wsdl:output>
+		</wsdl:operation>				<wsdl:operation name="SayDate">			<wsdl:input message="tns:SayDateRequest"></wsdl:input>			<wsdl:output message="tns:SayDateResponse"></wsdl:output>
+		</wsdl:operation></wsdl:portType>
+	<wsdl:binding name="HelloServicePortBinding" type="tns:HelloIF">
+		<soap:binding style="document"
+			transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="sayHello">
+			<soap:operation
+				soapAction="http://www.example.org/HelloService/sayHello" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="sayDateAsString">
+			<soap:operation
+				soapAction="http://www.example.org/HelloService/sayDateAsString" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="SayDate">
+			<soap:operation
+				soapAction="http://www.example.org/HelloService/SayDate" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="HelloService">
+		<wsdl:port name="HelloServicePort" binding="tns:HelloServicePortBinding">
+			<soap:address location="http://www.example.org/" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
+
+	
