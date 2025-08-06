@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+
+	<groupId>sk.train</groupId>
+	<artifactId>Muster_Person_WS_Client_Loes3</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>Muster_Person_WS_Client</name>
+	<description>
+		JAX-WS Client für den entsprechenden JAX-WS Service
+	</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.release>17</maven.compiler.release>
+	</properties>
+
+	<dependencies>
+
+		<!-- Begin: Jetzt alles für Client-seitigen Zugriff auf SOAP-WS -->
+
+		<!-- JAXB -->
+		<dependency>
+			<groupId>jakarta.xml.bind</groupId>
+			<artifactId>jakarta.xml.bind-api</artifactId>
+			<version>4.0.2</version>
+		</dependency>
+
+		<!-- JAX-WS (Annotationen in den generierten Klassen) -->
+		<dependency>
+			<groupId>jakarta.xml.ws</groupId>
+			<artifactId>jakarta.xml.ws-api</artifactId>
+			<version>4.0.2</version>
+		</dependency>
+
+		<!-- JAX-WS Implemetierung für die Client-Seite (z.Bsp. die
+		Metro-Variante) -->
+		<dependency>
+			<groupId>com.sun.xml.ws</groupId>
+			<artifactId>jaxws-rt</artifactId>
+			<version>4.0.2</version>
+		</dependency>
+
+		<!-- Ende: Client-seitigen Zugriff auf SOAP-WS -->
+
+
+		<!-- testing dependencies  -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter</artifactId>
+			<version>5.9.2</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.sun.xml.ws</groupId>
+				<artifactId>jaxws-maven-plugin</artifactId>
+				<version>4.0.3</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>wsimport</goal>
+						</goals>
+<!--						<phase>validate</phase>-->
+					</execution>
+				</executions>
+				<configuration>
+					<wsdlUrls>
+						<wsdlUrl>
+							http://localhost:8080/Person_WS/PersonList_WS?wsdl
+						</wsdlUrl>
+					</wsdlUrls>
+<!--					<wsdlDirectory>${project.basedir}/src/main/resources/</wsdlDirectory>-->
+					<packageName>sk.train.generated</packageName>
+					<sourceDestDir>
+						${project.build.directory}/generated-sources/
+					</sourceDestDir>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
