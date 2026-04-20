@@ -25,8 +25,8 @@ public class Hello_DS_Bean implements Hello_DS_BeanRemote {
 	private DataSource ds;
 
 	// so geht es für die DefaultDS, dia auf H2 basiert
-	// @Resource(name="ExampleDS")
-	// private DataSource ds;
+	//	 @Resource(name="ExampleDS")
+	//	 private DataSource ds;
 
 	public Hello_DS_Bean() {
 	}

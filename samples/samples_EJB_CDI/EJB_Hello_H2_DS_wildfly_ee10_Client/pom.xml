@@ -5,11 +5,11 @@
 	
 
 	<groupId>sk.train</groupId>
-	<artifactId>EJB_Hello_H2_DS_wildfly_ee8_Client</artifactId>
+	<artifactId>EJB_Hello_H2_DS_wildfly_ee10_Client</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	
-	<name>EJB_Hello_H2_DS_wildfly_ee8_Client</name>
+	<name>EJB_Hello_H2_DS_wildfly_ee10_Client</name>
 	<description>Client-Projekt zum entsprechenden EJB-Projekt</description>
 
 	<properties>
@@ -22,7 +22,7 @@
 		<dependency>
             <groupId>org.wildfly</groupId>
             <artifactId>wildfly-ejb-client-bom</artifactId>
-            <version>32.0.1.Final</version>
+            <version>38.0.1.Final</version>
             <type>pom</type>
         </dependency> 	
 
