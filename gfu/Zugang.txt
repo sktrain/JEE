@@ -1,0 +1,57 @@
+Guten Tag Stephan Karrer,
+
+hier sind die Infos für Ihre "Enterprise JavaBeans (EJB 3.x) mit Jakarta EE" Schulung am 21.04.2026.
+
+
+
+Um das Zoom-Meeting zu starten, melden Sie sich bitte im Zoom-Client mit Ihren Zugangsdaten an, oder über den Browser unter https://zoom.us/meeting. Unter dem Reiter 'Meeting' finden Sie das von uns angelegte Zoom-Meeting. Bitte beachten Sie, dass Sie das Meeting zum Seminar und nicht Ihren 'persönlichen Meeting-Raum' starten.
+
+Sollten Sie Ihr Kennwort vergessen haben, können Sie in dem Client über den Button 'Vergessen?' ein neues Kennwort anfordern.
+
+ 
+
+Zugangsdaten für die bereitgestellten Rechner:
+
+Stephan, Karrer rdp.gfu.cloud:44220 Dozent w7GTdoz0LW
+
+Filiz, Selina rdp.gfu.cloud:44221 Teilnehmer x8HUep1AMX
+
+Mit den folgenden Zugangsdaten können die Teilnehmer ihre Schulungsumgebung über den Webbrowser erreichen:
+
+URL: https://connect.gfu.cloud/
+Benutzername: 77376
+Passwort: hchgo6m26fxkwxgw
+
+Mit der Tastenkombination [STRG]+[ALT]+[SHIFT] können sie ein Menü mit verschiedenen Optionen einblenden.
+
+ 
+
+Der gemeinsame Netzwerk-Ordner auf dem Desktop leitet Sie direkt in Raum22 weiter.
+
+Bitte beachten, dass die Rechner erst im Laufe des Nachmittags vorbereitet werden, sowie dass der gemeinsame Netzwerkordner jeden Samstag automatisch geleert wird.
+
+Für einen Hinweis an technik@gfu.net am Ende des Seminars , dass die PCs für die nächsten Kurse überschrieben werden können, wären wir Ihnen sehr dankbar.
+
+ 
+
+Wichtiger Hinweis
+Sollten Sie uns keine weiteren Informationen mitteilen, gehen wir davon aus, dass die Rechner am letzten Seminartag um 16:15 Uhr ausgeschaltet und für den nächsten Kurs überschrieben werden können.
+
+
+Sollten Ihre Teilnehmer technische Schwierigkeiten haben sich mit dem Remote-Rechner zu Verbinden (z.B. auf Grund einer Firewall), können wir auf Wunsch einen Zugriff per Browser bereitstellen.
+
+
+Teilen Sie uns dann bitte mit, für welchen oder welche Teilnehmer wir einen Zugang ermöglichen sollen.
+
+Die Zugangsdaten schicken wir Ihnen dann per E-Mail zu, damit Sie diese an die Teilnehmer weitergeben können.
+
+
+Die Teilnehmer haben die Informationen für die Teilnahme bereits erhalten.
+
+
+Bei Fragen können Sie sich gerne bei der GFU-Technik melden.
+
+
+Viele Grüße
+
+
