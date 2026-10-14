@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<ui:composition template="layout.xhtml">
+
+  <f:metadata>
+    <f:viewParam name="id" value="#{employeeBean.emp.employeeId}"/>
+    <f:viewAction action="#{employeeBean.findEmpById()}"/>
+  </f:metadata>
+
+  <ui:define name="title">Employee</ui:define>
+
+  <ui:define name="content">
+
+    <h:panelGrid columns="2">
+      <h:outputLabel value="ID : "/>
+      <h:outputText value="#{employeeBean.emp.employeeId}"/>
+
+      <h:outputLabel value="Vorname : "/>
+      <h:outputText value="#{employeeBean.emp.firstName}"/>
+
+      <h:outputLabel value="Nachname : "/>
+      <h:outputText value="#{employeeBean.emp.lastName}" />
+
+      <h:outputLabel value="Gehalt : "/>
+      <h:outputText value="#{employeeBean.emp.salary}"/>
+    </h:panelGrid>
+
+  </ui:define>
+
+</ui:composition>
+</html>
